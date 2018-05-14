@@ -1,6 +1,6 @@
 <div align="center"><img src="/Assets/logo.png" width="600" /></div>
 <h1 align="center">
-  <b>ANSI Escape Code</b>
+  <b>ANSIEscapeCode</b>
   <br>
   <a href="https://github.com/flintbox/ANSIEscapeCode/releases"><img src="https://img.shields.io/github/release/flintbox/ANSIEscapeCode.svg" alt="GitHub release" /></a>
   <a href="https://swift.org/package-manager"><img src="https://img.shields.io/badge/Swift%20PM-compatible-orange.svg" alt="Swift Package Manager" /></a>
