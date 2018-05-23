@@ -8,15 +8,12 @@ let package = Package(
         .library(
             name: "ANSIEscapeCode",
             targets: ["ANSIEscapeCode"]),
-        .executable(
-            name: "logo",
-            targets: ["logo"]),
     ],
     targets: [
         .target(
             name: "ANSIEscapeCode"),
         .target(
-            name: "logo",
+            name: "ANSIEscapeCode-logo",
             dependencies: ["ANSIEscapeCode"]),
     ]
 )
