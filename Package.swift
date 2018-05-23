@@ -13,7 +13,7 @@ let package = Package(
         .target(
             name: "ANSIEscapeCode"),
         .target(
-            name: "logo",
+            name: "ANSIEscapeCode-logo",
             dependencies: ["ANSIEscapeCode"]),
     ]
 )
