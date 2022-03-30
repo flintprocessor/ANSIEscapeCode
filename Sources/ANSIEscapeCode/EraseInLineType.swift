@@ -30,6 +30,6 @@ import Foundation
 /// - fromCursorToEndOfLine: Erase from cursor to the end of line.
 /// - fromCursorToBeginningOfLine: Erase from cursor to the beginning of line.
 /// - entireLine: Erase entire line.
-public enum EraseInLineType {
+public enum EraseInLineType: Int {
     case fromCursorToEndOfLine, fromCursorToBeginningOfLine, entireLine
 }

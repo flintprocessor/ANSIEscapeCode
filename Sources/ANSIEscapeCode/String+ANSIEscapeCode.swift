@@ -29,25 +29,25 @@ import Foundation
 public extension String {
 
     /// Set text bold on terminal.
-    public var boldOutput: String {
+    var boldOutput: String {
         return ANSIEscapeCode.Decoration.bold
             + self + ANSIEscapeCode.Decoration.reset
     }
 
     /// Set text italic on terminal.
-    public var italicOutput: String {
+    var italicOutput: String {
         return ANSIEscapeCode.Decoration.italic
             + self + ANSIEscapeCode.Decoration.reset
     }
 
     /// Set text underline on terminal.
-    public var underlineOutput: String {
+    var underlineOutput: String {
         return ANSIEscapeCode.Decoration.underline
             + self + ANSIEscapeCode.Decoration.reset
     }
 
     /// Set text blink on terminal.
-    public var blinkOutput: String {
+    var blinkOutput: String {
         return ANSIEscapeCode.Decoration.blink
             + self + ANSIEscapeCode.Decoration.reset
     }
@@ -56,7 +56,7 @@ public extension String {
     ///
     /// - Parameter color: Text color.
     /// - Returns: Processed string.
-    public func color(_ color: TextColor) -> String {
+    func color(_ color: TextColor) -> String {
         return ANSIEscapeCode.Decoration.textColor(color)
             + self + ANSIEscapeCode.Decoration.reset
     }
@@ -66,7 +66,7 @@ public extension String {
     /// - Parameter color: 8 bits color.
     ///                    Refer: https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
     /// - Returns: Processed string.
-    public func colorFrom8BitsColorSet(_ color: Int) -> String {
+    func colorFrom8BitsColorSet(_ color: Int) -> String {
         return ANSIEscapeCode.Decoration.text8BitsColor(color)
             + self + ANSIEscapeCode.Decoration.reset
     }
@@ -79,7 +79,7 @@ public extension String {
     ///   - green: 8 bits green color value.
     ///   - blue: 8 bits blue color value.
     /// - Returns: Processed string.
-    public func colorFromRGBColorSet(red: Int, green: Int, blue: Int) -> String {
+    func colorFromRGBColorSet(red: Int, green: Int, blue: Int) -> String {
         return ANSIEscapeCode.Decoration.textRGBColor(red: red, green: green, blue: blue)
             + self + ANSIEscapeCode.Decoration.reset
     }
@@ -88,7 +88,7 @@ public extension String {
     ///
     /// - Parameter color: Background color.
     /// - Returns: Processed string.
-    public func backgroundColor(_ color: BackgroundColor) -> String {
+    func backgroundColor(_ color: BackgroundColor) -> String {
         return ANSIEscapeCode.Decoration.backgroundColor(color)
             + self + ANSIEscapeCode.Decoration.reset
     }
@@ -98,7 +98,7 @@ public extension String {
     /// - Parameter color: 8 bits color.
     ///                    Refer: https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
     /// - Returns: Processed string.
-    public func backgroundColorFrom8BitsColorSet(_ color: Int) -> String {
+    func backgroundColorFrom8BitsColorSet(_ color: Int) -> String {
         return ANSIEscapeCode.Decoration.background8BitsColor(color)
             + self + ANSIEscapeCode.Decoration.reset
     }
@@ -111,7 +111,7 @@ public extension String {
     ///   - green: 8 bits green color value.
     ///   - blue: 8 bits blue color value.
     /// - Returns: Processed string.
-    public func backgroundColorFromRGBColorSet(red: Int, green: Int, blue: Int) -> String {
+    func backgroundColorFromRGBColorSet(red: Int, green: Int, blue: Int) -> String {
         return ANSIEscapeCode.Decoration.backgroundRGBColor(red: red, green: green, blue: blue)
             + self + ANSIEscapeCode.Decoration.reset
     }
