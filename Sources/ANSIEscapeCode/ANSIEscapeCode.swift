@@ -139,7 +139,7 @@ public struct ANSIEscapeCode {
         /// - Parameter type: Erase in display type.
         /// - Returns: `\u{001B}[(TYPE)J`
         public static func eraseInDisplay(_ type: EraseInDisplayType) -> String {
-            return "\(esc)\(type.hashValue)J"
+            return "\(esc)\(type.rawValue)J"
         }
 
         /// Erase content in line.
@@ -147,7 +147,7 @@ public struct ANSIEscapeCode {
         /// - Parameter type: Erase in line type.
         /// - Returns: `\u{001B}[(TYPE)K`
         public static func eraseInLine(_ type: EraseInLineType) -> String {
-            return "\(esc)\(type.hashValue)K"
+            return "\(esc)\(type.rawValue)K"
         }
     }
 

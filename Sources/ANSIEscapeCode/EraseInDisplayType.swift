@@ -30,6 +30,6 @@ import Foundation
 /// - fromCursorToEndOfScreen: Erase from cursor to the end of screen.
 /// - fromCursorToBeginningOfScreen: Erase from cursor to the beginning of screen.
 /// - entireScreen: Erase entire screen.
-public enum EraseInDisplayType {
+public enum EraseInDisplayType: Int {
     case fromCursorToEndOfScreen, fromCursorToBeginningOfScreen, entireScreen
 }
